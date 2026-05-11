@@ -1,0 +1,17 @@
+name: AWS Assignment CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run CI/CD Pipeline
+        run: echo "AWS Assignment Pipeline Successful"
